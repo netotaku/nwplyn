@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset-fonts-grids/reset-fonts-grids.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+        <script type="text/javascript" src="http://yui.yahooapis.com/2.9.0/build/element/element-min.js"></script>
+        <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script type="text/javascript" src="/assets/js/nwplyn.js"></script>
+        <meta name="description" content="Tweet #nowPlaying from last.fm, Spotify and iTunes">
+        <title>{title}</title>
+        <script type="text/javascript">
+
+           ///////////////////////////
+
+           var has_cookie = false;
+
+           YAHOO.util.Event.onDOMReady(function(){
+
+                new nwplyn.form();
+                new nwplyn.bookmark();
+                if(has_cookie) new nwplyn.ol();
+
+           });
+            
+
+        </script>
+    </head>
+
+    <body>
+
+        <div class="header">
+
+            <h1>Tweet #nowPlaying from last.fm, Spotify and iTunes</h1>
+            <p><a href="/">@nwplyn</a></p>
+
+        </div>
+
+        <div id="doc" class="yui-t4"><div id="bd">{content}</div></div>
+
+        <div class="footer">
+
+            <p class="follow"><a href="http://twitter.com/nwplyn" title="Follow @nwplyn on Twitter">@<span>nwplyn</span></a></p>
+            
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                    <a class="addthis_button_facebook at300b" href="http://www.addthis.com/bookmark.php?v=250&amp;winname=addthis&amp;pub=digitalvisitordev&amp;source=tbx32-250&amp;lng=en-US&amp;s=facebook&amp;url=http%3A%2F%2Fdev.lci%2F&amp;title=Home%20%7C%20London%20Clubs%20International%20%7C%20Player%20Community&amp;ate=AT-digitalvisitordev/-/-/4dbf2a8176e23a78/1&amp;uid=4dbf2a81f164422b&amp;sms_ss=1&amp;at_xt=1&amp;tt=0" target="_blank" title="Send to Facebook"><span class="at300bs at15nc at15t_facebook"></span></a>
+                    <a class="addthis_button_twitter at300b" target="_blank" title="Tweet This"><span class="at300bs at15nc at15t_twitter"></span></a>
+                    <a class="addthis_button_email at300b" title="Email"><span class="at300bs at15nc at15t_email"></span></a>
+            </div>
+          
+        </div>
+
+        <script type="text/javascript">
+            
+          // user voice
+          (function() {
+            var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+            uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/XoBRThqVJAwIWBq89hN0VQ.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+          })();
+
+          // google
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-4378941-16']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4dbf29307cc266c2"></script>
+
+    </body>
+
+</html>
